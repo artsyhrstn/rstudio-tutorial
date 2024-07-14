@@ -12,6 +12,9 @@ names(data1)[8] <- "CreditRate"
 regresi1 = lm(LnKPR ~ LnPDB + Inflasi + CreditRate + LnJII + DFTV, data=data1)
 summary(regresi1)
 
+# Interpretasi
+
+
 # Uji Normalitas
 # install.packages("gvlma")
 library("gvlma")
