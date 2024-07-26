@@ -1,0 +1,134 @@
+---
+title: "R-Studio Time Series"
+format: html
+editor: visual
+---
+
+## BAB III - Univariate Time Series: ARIMA, ARCH, dan GARCH
+
+# 3.1. Prosedur Box Jenkins
+
+1.  Identifikasi
+2.  Estimasi Model
+3.  Evaluasi Model
+4.  Peramalan
+
+## 3.1. Identifikasi
+
+### 3.1.1. Inisialisasi Data
+
+```{r}
+library(readxl)
+hargaberas <- read_excel('C:\\Users\\Thinkpad\\iCloudDrive\\repository\\R-tutorial\\data-i\\Bab 3\\ARIMA.xlsx')
+```
+
+```{r}
+hargaberas = hargaberas[,c(-1)]
+hargaberas = ts(hargaberas, start=c(2012,1), frequency=12)
+hargaberas
+```
+
+\[,c(-1)\] = Menghapus kolom ke-1 pada objek harga beras.
+
+ts = Membuat periode waktu data harga beras (format sebelumnya belum dapat dibaca oleh software RStudio)
+
+start = observasi pertama pada data, dapat berupa nomor tunggal atau vektor
+
+frequency = jumlah observasi per unit waktu (kuartal = 4, tahun = 1), tidak cocok digunakan untuk data harian karena biasanya terdapat perbedaan unit waktu dalam data harian.
+
+### 3.1.2. Visualisasi Harga Beras
+
+```{r}
+par(mfrow=c(1,1))
+plot(hargaberas, main="Harga Beras di Perdagangan Besar")
+```
+
+### 3.1.3. Dekomposisi Data
+
+Fungsi dekomposisi digunakan untuk melakukan dekomposisi data harga beras menjadi beberapa komponen time series.
+
+1.  Random
+2.  Seasonal
+3.  Trend
+4.  Observed
+
+Hal ini berguna mengetahui keberadaan komponen time series sehingga menjadi pertimbangan dalam membuat model
+
+```{r}
+dekomposisi = decompose(hargaberas)
+plot(dekomposisi)
+```
+
+### 3.1.4. Melihat ACF dan PACF
+
+```{r}
+par (mfrow=c(2, 1)) # Jendela plot 2 baris 1 kolom
+acf(hargaberas, lag=48)
+pacf(hargaberas, lag=48)
+```
+
+### 3.1.5. Uji Stationeritas
+
+```{r}
+library("aTSA")
+adf.test(hargaberas)
+```
+
+```{r}
+# Uji ADF
+adf.test(diff(hargaberas))
+```
+
+## 3.2. Estimasi Model
+
+```{r}
+library(forecast)
+auto.arima(hargaberas, trace=TRUE)
+```
+
+Berdasarkan output tersebut, model terbaik yang menjadi rekomendasi adalah ARIMA (0,1,3)(2,1,0)\[12\]
+
+Hal tersebut karena memiliki AIC terkecil
+
+Model tersebut juga 1. Memiliki komponen nonseasonal 2. Seasonal
+
+### 3.2.1. Identifikasi Koefisien, Standard Error, dan P-Value
+
+```{r}
+library(lmtest)
+# ARIMA(0,1,3)(2,1,0)[12]
+model1 = arima(hargaberas, order=c(0,1,3), seasonal = list(order=c(2,1,0), period=12)) # Model ARIMA manual
+coeftest(model1)
+```
+
+## 3.3. Evaluasi Model
+
+### 3.3.1. Uji Heteroskedastisitas
+
+Mengetahui apakah cukup model ARIMA atau perlu dilanjutkan ARCH/GARCH
+
+```{r}
+arch.test(model1)
+```
+
+### 3.3.2. Uji Keacakan Residual
+
+Diagnostik model (autokorelasi)
+
+```{r}
+Box.test(model1$residuals, lag = 1, type = c("Ljung-Box"), fitdf = 0)
+```
+
+Berdasarkan output, p-value 0.9487 \> taraf signifikansi (0.05) sehingga dapat disimpulkan gagal tolak H0, sehingga tidak cukup bukti untuk menyatakan adanya autokorelasi.
+
+Seluruh asumsi pada evaluasi model terpenuhi sehingga dapat melakukan peramalan data harga beras dengan model 1.
+
+## 3.4. Forecast
+
+```{r}
+forecast(model1, h=12)
+```
+
+```{r}
+plot(forecast(model1, h=12))
+```

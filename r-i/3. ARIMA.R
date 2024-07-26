@@ -1,7 +1,7 @@
 library(readxl)
-hargaberas <- read_excel('C:\\Users\\hisbi\\iCloudDrive\\repository\\R-tutorial\\data-i\\Bab 3\\ARIMA.xlsx')
+hargaberas <- read_excel('C:\\Users\\Thinkpad\\iCloudDrive\\repository\\R-tutorial\\data-i\\Bab 3\\ARIMA.xlsx')
 
-# Prosedur Box Jenkins
+## Prosedur Box Jenkins
 # 1. Identifikasi
 # 2. Estimasi Model
 # 3. Evaluasi Model
