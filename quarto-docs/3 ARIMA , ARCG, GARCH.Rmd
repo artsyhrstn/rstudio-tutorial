@@ -1,0 +1,69 @@
+# Buka Data
+
+```{r}
+# Load the necessary library
+library(readxl)
+
+# Read the Excel file
+data_beras <- read_excel("C:/Users/hisbi/OneDrive/Documents/GitHub/rstudio-tutorial/data-ipb/Bab 3/ARIMA.xlsx")
+
+# Drop the first column (assuming it contains non-numeric data like dates)
+data_beras <- data_beras[,-1]
+
+# Convert the data frame to a time series (Ensure it's numeric)
+data_beras <- ts(as.numeric(unlist(data_beras)), start = c(2012,1), frequency = 12)
+
+# Check the structure of the time series
+print(data_beras)
+```
+
+# Visualisasi Data
+
+```{r}
+par(mfrow=c(1,1))
+plot(data_beras)
+```
+
+# Dekomposisi Data
+
+```{r}
+dekomposisi = decompose(data_beras)
+plot(dekomposisi)
+```
+
+# Prosedur Box Jenkins
+
+## Identifikasi
+
+### Pola Data
+
+### Stasioneritas Data
+
+```{r}
+# install.packages("aTSA")
+library(aTSA)
+adf.test(data_beras)
+```
+
+### Perilaku ACF dan PACF (Fungsi autokorelasi parsial)
+
+#### ACF
+
+```{r}
+par(mfrow = c(2,1))
+# Plot ACF
+acf(data_beras, lag.max = 48, main = "Autocorrelation Function (ACF)")
+```
+
+#### PACF
+
+```{r}
+# Plot PACF
+pacf(data_beras, lag.max = 48, main = "Partial Autocorrelation Function (PACF)")
+```
+
+## Estimasi
+
+## Evaluasi Model
+
+## Peramalan
