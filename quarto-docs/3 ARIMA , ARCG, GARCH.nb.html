@@ -1757,217 +1757,32 @@ display: none;
 <h1>1. Buka File</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHViR2xpY21GeWVTaHlaV0ZrZUd3cFhHNWNiaU1nU1c1cGMybGhiR2x6WVhOcElHUmhkR0VnZVdGdVp5QmhhMkZ1SUdScFozVnVZV3RoYmx4dVpHRjBZVjlyY0hJZ1BDMGdjbVZoWkY5bGVHTmxiQ2hjSWtNNlhGeGNYRlZ6WlhKelhGeGNYR2hwYzJKcFhGeGNYRTl1WlVSeWFYWmxYRnhjWEVSdlkzVnRaVzUwYzF4Y1hGeEhhWFJJZFdKY1hGeGNjbk4wZFdScGJ5MTBkWFJ2Y21saGJGeGNYRnhrWVhSaExXbHdZbHhjWEZ4Q1lXSWdNbHhjWEZ4a1lYUmhNUzU0YkhONFhDSXBYRzVjYmlNZ1RXVnVaMmRoYm5ScElHNWhiV0VnZG1GeWFXRmlaV3hjYm01aGJXVnpLR1JoZEdGZmEzQnlLVnN5WFNBOExTQmNJazkxZEhOMFlXNWthVzVuUzFCU1hDSmNibTVoYldWektHUmhkR0ZmYTNCeUtWczNYU0E4TFNCY0lrbHVabXhoYzJsY0lseHVibUZ0WlhNb1pHRjBZVjlyY0hJcFd6aGRJRHd0SUZ3aVEzSmxaR2wwVW1GMFpWd2lYRzVnWUdBaWZRPT0gLS0+XG5cbmBgYHJcbmxpYnJhcnkocmVhZHhsKVxuXG4jIEluaXNpYWxpc2FzaSBkYXRhIHlhbmcgYWthbiBkaWd1bmFrYW5cbmRhdGFfa3ByIDwtIHJlYWRfZXhjZWwoXCJDOlxcXFxVc2Vyc1xcXFxoaXNiaVxcXFxPbmVEcml2ZVxcXFxEb2N1bWVudHNcXFxcR2l0SHViXFxcXHJzdHVkaW8tdHV0b3JpYWxcXFxcZGF0YS1pcGJcXFxcQmFiIDJcXFxcZGF0YTEueGxzeFwiKVxuXG4jIE1lbmdnYW50aSBuYW1hIHZhcmlhYmVsXG5uYW1lcyhkYXRhX2twcilbMl0gPC0gXCJPdXRzdGFuZGluZ0tQUlwiXG5uYW1lcyhkYXRhX2twcilbN10gPC0gXCJJbmZsYXNpXCJcbm5hbWVzKGRhdGFfa3ByKVs4XSA8LSBcIkNyZWRpdFJhdGVcIlxuYGBgXG5cbjwhLS0gcm5iLXNvdXJjZS1lbmQgLS0+XG4ifQ== -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkeGwpXG5cbiMgSW5pc2lhbGlzYXNpIGRhdGEgeWFuZyBha2FuIGRpZ3VuYWthblxuZGF0YV9rcHIgPC0gcmVhZF9leGNlbChcIkM6XFxcXFVzZXJzXFxcXGhpc2JpXFxcXE9uZURyaXZlXFxcXERvY3VtZW50c1xcXFxHaXRIdWJcXFxccnN0dWRpby10dXRvcmlhbFxcXFxkYXRhLWlwYlxcXFxCYWIgMlxcXFxkYXRhMS54bHN4XCIpXG5cbiMgTWVuZ2dhbnRpIG5hbWEgdmFyaWFiZWxcbm5hbWVzKGRhdGFfa3ByKVsyXSA8LSBcIk91dHN0YW5kaW5nS1BSXCJcbm5hbWVzKGRhdGFfa3ByKVs3XSA8LSBcIkluZmxhc2lcIlxubmFtZXMoZGF0YV9rcHIpWzhdIDwtIFwiQ3JlZGl0UmF0ZVwiXG5gYGAifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHViR2xpY21GeWVTaHlaV0ZrZUd3cFhHNWNiaU1nU1c1cGMybGhiR2x6WVhOcElHUmhkR0VnZVdGdVp5QmhhMkZ1SUdScFozVnVZV3RoYmx4dVpHRjBZVjlpWlhKaGN5QThMU0J5WldGa1gyVjRZMlZzS0Z3aVF6cGNYRnhjVlhObGNuTmNYRnhjYUdselltbGNYRnhjVDI1bFJISnBkbVZjWEZ4Y1JHOWpkVzFsYm5SelhGeGNYRWRwZEVoMVlseGNYRnh5YzNSMVpHbHZMWFIxZEc5eWFXRnNYRnhjWEdSaGRHRXRhWEJpWEZ4Y1hFSmhZaUF6WEZ4Y1hFRlNTVTFCTG5oc2MzaGNJaWxjYm1SaGRHRmZZbVZ5WVhNZ1BTQmtZWFJoWDJKbGNtRnpXeXhqS0MweEtWMWNibVJoZEdGZlltVnlZWE1nUFNCMGN5aGtZWFJoWDJKbGNtRnpMQ0J6ZEdGeWREMWpLREl3TVRJc01Ta3NJR1p5WlhGMVpXNWplU0E5SURFeUtWeHVaR0YwWVY5aVpYSmhjMXh1WUdCZ0luMD0gLS0+XG5cbmBgYHJcbmxpYnJhcnkocmVhZHhsKVxuXG4jIEluaXNpYWxpc2FzaSBkYXRhIHlhbmcgYWthbiBkaWd1bmFrYW5cbmRhdGFfYmVyYXMgPC0gcmVhZF9leGNlbChcIkM6XFxcXFVzZXJzXFxcXGhpc2JpXFxcXE9uZURyaXZlXFxcXERvY3VtZW50c1xcXFxHaXRIdWJcXFxccnN0dWRpby10dXRvcmlhbFxcXFxkYXRhLWlwYlxcXFxCYWIgM1xcXFxBUklNQS54bHN4XCIpXG5kYXRhX2JlcmFzID0gZGF0YV9iZXJhc1ssYygtMSldXG5kYXRhX2JlcmFzID0gdHMoZGF0YV9iZXJhcywgc3RhcnQ9YygyMDEyLDEpLCBmcmVxdWVuY3kgPSAxMilcbmRhdGFfYmVyYXNcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkeGwpXG5cbiMgSW5pc2lhbGlzYXNpIGRhdGEgeWFuZyBha2FuIGRpZ3VuYWthblxuZGF0YV9iZXJhcyA8LSByZWFkX2V4Y2VsKFwiQzpcXFxcVXNlcnNcXFxcaGlzYmlcXFxcT25lRHJpdmVcXFxcRG9jdW1lbnRzXFxcXEdpdEh1YlxcXFxyc3R1ZGlvLXR1dG9yaWFsXFxcXGRhdGEtaXBiXFxcXEJhYiAzXFxcXEFSSU1BLnhsc3hcIilcbmRhdGFfYmVyYXMgPSBkYXRhX2JlcmFzWyxjKC0xKV1cbmRhdGFfYmVyYXMgPSB0cyhkYXRhX2JlcmFzLCBzdGFydD1jKDIwMTIsMSksIGZyZXF1ZW5jeSA9IDEyKVxuZGF0YV9iZXJhc1xuYGBgIn0= -->
 <pre class="r"><code>library(readxl)
 
 # Inisialisasi data yang akan digunakan
-data_kpr &lt;- read_excel(&quot;C:\\Users\\hisbi\\OneDrive\\Documents\\GitHub\\rstudio-tutorial\\data-ipb\\Bab 2\\data1.xlsx&quot;)
-
-# Mengganti nama variabel
-names(data_kpr)[2] &lt;- &quot;OutstandingKPR&quot;
-names(data_kpr)[7] &lt;- &quot;Inflasi&quot;
-names(data_kpr)[8] &lt;- &quot;CreditRate&quot;</code></pre>
+data_beras &lt;- read_excel(&quot;C:\\Users\\hisbi\\OneDrive\\Documents\\GitHub\\rstudio-tutorial\\data-ipb\\Bab 3\\ARIMA.xlsx&quot;)
+data_beras = data_beras[,c(-1)]
+data_beras = ts(data_beras, start=c(2012,1), frequency = 12)
+data_beras</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-</div>
-<div id="estimasi-regresi" class="section level1">
-<h1>2. Estimasi Regresi</h1>
+<p>2 Visualisasi</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVjM1Z0YldGeWVTaHlaV2R5WlhOcE1TbGNibHh1WUdCZ0luMD0gLS0+XG5cbmBgYHJcbnN1bW1hcnkocmVncmVzaTEpXG5cbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShyZWdyZXNpMSlcblxuYGBgIn0= -->
-<pre class="r"><code>summary(regresi1)
-</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVjR0Z5S0cxbWNtOTNQV01vTVN3eEtTbGNibkJzYjNRb1pHRjBZVjlpWlhKaGN5d2diV0ZwYmowblNHRnlaMkVnUW1WeVlYTWdaR2tnVUdWeVpHRm5ZVzVuWVc0Z1FtVnpZWEluS1Z4dVlHQmdJbjA9IC0tPlxuXG5gYGByXG5wYXIobWZyb3c9YygxLDEpKVxucGxvdChkYXRhX2JlcmFzLCBtYWluPSdIYXJnYSBCZXJhcyBkaSBQZXJkYWdhbmdhbiBCZXNhcicpXG5gYGBcblxuPCEtLSBybmItc291cmNlLWVuZCAtLT5cbiJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGFyKG1mcm93PWMoMSwxKSlcbnBsb3QoZGF0YV9iZXJhcywgbWFpbj0nSGFyZ2EgQmVyYXMgZGkgUGVyZGFnYW5nYW4gQmVzYXInKVxuYGBgIn0= -->
+<pre class="r"><code>par(mfrow=c(1,1))
+plot(data_beras, main=&#39;Harga Beras di Perdagangan Besar&#39;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IExuS1BSIH4gTG5QREIgKyBJbmZsYXNpICsgQ3JlZGl0UmF0ZSArIExuSklJICsgREZUViwgXG4gICAgZGF0YSA9IGRhdGFfa3ByKVxuXG5SZXNpZHVhbHM6XG4gICAgICBNaW4gICAgICAgIDFRICAgIE1lZGlhbiAgICAgICAgM1EgICAgICAgTWF4IFxuLTAuMTM4MzM4IC0wLjAyOTM1MCAgMC4wMDQ1NjggIDAuMDI5MzA1ICAwLjA3MzY2NyBcblxuQ29lZmZpY2llbnRzOlxuICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgdCB2YWx1ZSBQcig+fHR8KSAgICBcbihJbnRlcmNlcHQpIC0yMS43OTgyNiAgICAyLjE5NDA3ICAtOS45MzUgOC42MWUtMTQgKioqXG5MblBEQiAgICAgICAgIDIuMjk3NDQgICAgMC4xNDg4NyAgMTUuNDMyICA8IDJlLTE2ICoqKlxuSW5mbGFzaSAgICAgIC0wLjAyNDA3ICAgIDAuMDIyMjMgIC0xLjA4MyAwLjI4MzczNyAgICBcbkNyZWRpdFJhdGUgICAgMC4wNDM5NyAgICAwLjAxMDgxICAgNC4wNjcgMC4wMDAxNTYgKioqXG5MbkpJSSAgICAgICAgIDAuMTYxNTIgICAgMC4xMDgwMyAgIDEuNDk1IDAuMTQwNzE1ICAgIFxuREZUViAgICAgICAgICAwLjE4MzU5ICAgIDAuMDMzNzIgICA1LjQ0NCAxLjMxZS0wNiAqKipcbi0tLVxuU2lnbmlmLiBjb2RlczogIDAg4oCYKioq4oCZIDAuMDAxIOKAmCoq4oCZIDAuMDEg4oCYKuKAmSAwLjA1IOKAmC7igJkgMC4xIOKAmCDigJkgMVxuXG5SZXNpZHVhbCBzdGFuZGFyZCBlcnJvcjogMC4wNDM4MSBvbiA1NCBkZWdyZWVzIG9mIGZyZWVkb21cbk11bHRpcGxlIFItc3F1YXJlZDogIDAuOTY1OSxcdEFkanVzdGVkIFItc3F1YXJlZDogIDAuOTYyNyBcbkYtc3RhdGlzdGljOiAzMDUuNiBvbiA1IGFuZCA1NCBERiwgIHAtdmFsdWU6IDwgMi4yZS0xNlxuIn0= -->
-<pre><code>
-Call:
-lm(formula = LnKPR ~ LnPDB + Inflasi + CreditRate + LnJII + DFTV, 
-    data = data_kpr)
-
-Residuals:
-      Min        1Q    Median        3Q       Max 
--0.138338 -0.029350  0.004568  0.029305  0.073667 
-
-Coefficients:
-             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) -21.79826    2.19407  -9.935 8.61e-14 ***
-LnPDB         2.29744    0.14887  15.432  &lt; 2e-16 ***
-Inflasi      -0.02407    0.02223  -1.083 0.283737    
-CreditRate    0.04397    0.01081   4.067 0.000156 ***
-LnJII         0.16152    0.10803   1.495 0.140715    
-DFTV          0.18359    0.03372   5.444 1.31e-06 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 0.04381 on 54 degrees of freedom
-Multiple R-squared:  0.9659,    Adjusted R-squared:  0.9627 
-F-statistic: 305.6 on 5 and 54 DF,  p-value: &lt; 2.2e-16</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="uji-asumsi-klasik" class="section level1">
-<h1>3 Uji Asumsi Klasik</h1>
-<p>Uji asumsi klasik dalam mengguanakan R Studio biasa menggunakan
-library gvlma<br />
-</p>
-<div id="uji-normalitas" class="section level2">
-<h2>3.1 Uji Normalitas</h2>
-<ul>
-<li>Biasa dikenal uji Jarque-Beras (JB)</li>
-</ul>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVaM1pzYldFb2NtVm5jbVZ6YVRFcFhHNWNibUJnWUNKOSAtLT5cblxuYGBgclxuZ3ZsbWEocmVncmVzaTEpXG5cbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ3ZsbWEocmVncmVzaTEpXG5cbmBgYCJ9 -->
-<pre class="r"><code>gvlma(regresi1)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IExuS1BSIH4gTG5QREIgKyBJbmZsYXNpICsgQ3JlZGl0UmF0ZSArIExuSklJICsgREZUViwgXG4gICAgZGF0YSA9IGRhdGFfa3ByKVxuXG5Db2VmZmljaWVudHM6XG4oSW50ZXJjZXB0KSAgICAgICAgTG5QREIgICAgICBJbmZsYXNpICAgQ3JlZGl0UmF0ZSAgICAgICAgTG5KSUkgICAgICAgICBERlRWICBcbiAgLTIxLjc5ODI2ICAgICAgMi4yOTc0NCAgICAgLTAuMDI0MDcgICAgICAwLjA0Mzk3ICAgICAgMC4xNjE1MiAgICAgIDAuMTgzNTkgIFxuXG5cbkFTU0VTU01FTlQgT0YgVEhFIExJTkVBUiBNT0RFTCBBU1NVTVBUSU9OU1xuVVNJTkcgVEhFIEdMT0JBTCBURVNUIE9OIDQgREVHUkVFUy1PRi1GUkVFRE9NOlxuTGV2ZWwgb2YgU2lnbmlmaWNhbmNlID0gIDAuMDUgXG5cbkNhbGw6XG4gZ3ZsbWEoeCA9IHJlZ3Jlc2kxKSBcbiJ9 -->
-<pre><code>
-Call:
-lm(formula = LnKPR ~ LnPDB + Inflasi + CreditRate + LnJII + DFTV, 
-    data = data_kpr)
-
-Coefficients:
-(Intercept)        LnPDB      Inflasi   CreditRate        LnJII         DFTV  
-  -21.79826      2.29744     -0.02407      0.04397      0.16152      0.18359  
-
-
-ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
-USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
-Level of Significance =  0.05 
-
-Call:
- gvlma(x = regresi1) </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1mcmFtZS1iZWdpbiBleUp0WlhSaFpHRjBZU0k2ZXlKamJHRnpjMlZ6SWpwYkltUmhkR0V1Wm5KaGJXVWlYU3dpYm5KdmR5STZOU3dpYm1OdmJDSTZNeXdpYzNWdGJXRnllU0k2ZXlKRVpYTmpjbWx3ZEdsdmJpSTZXeUprWmlCYk5TRERseUF6WFNKZGZYMHNJbkprWmlJNklrZzBjMGxCUVVGQlFVRkJRVUpuZEhscFZFUnRhWFZDYVZsSFFtZGFiVUpvV1ZkS1oxcG5WWGxIVm1oRVVUbDRNRXhTWjFsblFVbE5SRWwzVFV4QmVXTkpURzlEY1VWbldYSktTMEpuVVN0cmVXdEdSemtyUVM5WVdrNTVRalUwY21rcldqTXZaRk4zWm5veFlsWkdlamRpV1ZsRWFUUldNeTlvVjNCdEwxbHlkakpwWlVWVmRuQm9ZVzB6VUhscVFtMXNkVlIwWTBJclltWlBSRE5PV1ZaR0szbDJWRlU1VFhSNmNqTjNNemRRUld3MWFGSlJPRWNyTVdNclR6SnZiWEJUTUVaeGFGVkJjVmxrWVV4UE5WbFlSbmxoVnpGRFUyMWFPVmh5U2tOWmJrcDRZVlZLUzFsc1NrOXhUalpFVTNGSFNFUnRjR1ZaYlRGdlRXUlVZM3BVUkVGelRXRmpNRVpqY0doTU9VRjBVU3RLZVhWTFVXMWFlRmxFVkZWVmVtbE1UVzkyTVhkUU1sUkNXVWxJUXpjMUsxRnVTbVZaYjBKS1kydHNjMFJOUTAwMVQweGpPVXhNVXpaSE9HSXhUR2t3Y25scGVrNW9aa1kyWm5wTWVITkNZbVpUZGtkVFVUZzJSME5SYURad1NtRnNSaXRqV0VweFUyMUtlRk5YV25sYWEyeHNaV2dyVTJNMVNreEpXbHBFZUZCclUydHJjMU5rVWt4TGQwczJSRTFxTjJnMllVWlFVamhUVVdkM1RWUkxRVVYzYjJGdGJXSkZTVlJWUTJkT1FTOXJlSGhVWkRWSmVsTjJSM2hrU1hkTk1HVmxZVU4yU0ZOUmNGZEJhRU5QWVVZd2NYaEpZa2RoU1UwMWFpdFJOMWQ2VVdKWGVuQmxZV3hhSzJKQ1ozQnZNVXA2UlhCT1VXUnRZMnR3Y1VkYVZFcENkM2h4WTBWcWNrWlNVbXcxYzBWRGJGRnpiMWR4ZUZocmJDdFRRMDVRUTJ4YWVXWkJlRTFDWlRVemFFaDNSQzh2TVdKRFRtZE5RVUZCUFQwaWZRPT0gLS0+XG5cbjxkaXYgZGF0YS1wYWdlZHRhYmxlPVwiZmFsc2VcIj5cbiAgPHNjcmlwdCBkYXRhLXBhZ2VkdGFibGUtc291cmNlIHR5cGU9XCJhcHBsaWNhdGlvbi9qc29uXCI+XG57XCJjb2x1bW5zXCI6W3tcImxhYmVsXCI6W1wiXCJdLFwibmFtZVwiOltcIl9ybl9cIl0sXCJ0eXBlXCI6W1wiXCJdLFwiYWxpZ25cIjpbXCJsZWZ0XCJdfSx7XCJsYWJlbFwiOltcIlZhbHVlXCJdLFwibmFtZVwiOlsxXSxcInR5cGVcIjpbXCJkYmxcIl0sXCJhbGlnblwiOltcInJpZ2h0XCJdfSx7XCJsYWJlbFwiOltcInAtdmFsdWVcIl0sXCJuYW1lXCI6WzJdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19LHtcImxhYmVsXCI6W1wiRGVjaXNpb25cIl0sXCJuYW1lXCI6WzNdLFwidHlwZVwiOltcImNoclwiXSxcImFsaWduXCI6W1wibGVmdFwiXX1dLFwiZGF0YVwiOlt7XCIxXCI6XCI3LjA0NDY4NTM0XCIsXCIyXCI6XCIwLjEzMzU0NTU3XCIsXCIzXCI6XCJBc3N1bXB0aW9ucyBhY2NlcHRhYmxlLlwiLFwiX3JuX1wiOlwiR2xvYmFsIFN0YXRcIn0se1wiMVwiOlwiMy42MDM4MjU4MFwiLFwiMlwiOlwiMC4wNTc2NDY3NlwiLFwiM1wiOlwiQXNzdW1wdGlvbnMgYWNjZXB0YWJsZS5cIixcIl9ybl9cIjpcIlNrZXduZXNzXCJ9LHtcIjFcIjpcIjAuODYyNjgwOTZcIixcIjJcIjpcIjAuMzUyOTg5NTNcIixcIjNcIjpcIkFzc3VtcHRpb25zIGFjY2VwdGFibGUuXCIsXCJfcm5fXCI6XCJLdXJ0b3Npc1wifSx7XCIxXCI6XCIyLjUyNzQ4NzYzXCIsXCIyXCI6XCIwLjExMTg3ODIyXCIsXCIzXCI6XCJBc3N1bXB0aW9ucyBhY2NlcHRhYmxlLlwiLFwiX3JuX1wiOlwiTGluayBGdW5jdGlvblwifSx7XCIxXCI6XCIwLjA1MDY5MDk0XCIsXCIyXCI6XCIwLjgyMTg2NTMxXCIsXCIzXCI6XCJBc3N1bXB0aW9ucyBhY2NlcHRhYmxlLlwiLFwiX3JuX1wiOlwiSGV0ZXJvc2NlZGFzdGljaXR5XCJ9XSxcIm9wdGlvbnNcIjp7XCJjb2x1bW5zXCI6e1wibWluXCI6e30sXCJtYXhcIjpbMTBdLFwidG90YWxcIjpbM119LFwicm93c1wiOntcIm1pblwiOlsxMF0sXCJtYXhcIjpbMTBdLFwidG90YWxcIjpbNV19LFwicGFnZXNcIjp7fX19XG4gIDxcL3NjcmlwdD5cbjxcL2Rpdj5cblxuPCEtLSBybmItZnJhbWUtZW5kIC0tPlxuIn0= -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NSwibmNvbCI6Mywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNSDDlyAzXSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJndHlpVERtaXVCaVlHQmdabUJoWVdKZ1pnVXlHVmhEUTl4MExSZ1lnQUlNREl3TUxBeWNJTG9DcUVnWXJKS0JnUStreWtGRzkrQS9YWk55QjU0cmkrWjMvZFN3ZnoxYlZGejdiWVlEaTRWMy9oV3BtL1lydjJpZUVVdnBoYW0zUHlqQm1sdVR0Y0IrYmZPRDNOWVZGK3l2VFU5TXR6cjN3MzdQRWw1aFJROEcrMWMrTzJvbXBTMEZxaFVBcVlkYUxPNVlYRnlhVzFDU21aOVhySkNZbkp4YVVKS1lsSk9xTjZEU3FHSERtcGVZbTFvTWRUY3pUREFzTWFjMEZjcGhMOUF0UStKeXVLUW1aeFlEVFVVemlMTW92MXdQMlRCWUlIQzc1K1FuSmVZb0JKY2tsc0RNQ001T0xjOUxMUzZHOGIxTGkwcnlpek5oZkY2ZnpMeHNCYmZTdkdTUTg2R0NRaDZwSmFsRitjWEpxU21KeFNXWnlaa2xsZWgrU2M1SkxJWlpEeFBrU2trc1NkUkxLd0s2RE1qN2g2YUZQUjhTUWd3TVRLQUV3b2FtbWJFSVRVQ2dOQS9reHhUZDVJelN2R3hkSXdNMGVlYUN2SFNRcFdBaENPYUYwcXhJYkdhSU01aitRN1d6UWJXenBlYWxaK2JCZ3BvMUp6RXBOUWRtY2twcUdaVEpCd3hxY0VqckZSUmw1c0VDbFFzb1dxeFhrbCtTQ05QQ2xaeWZBeE1CZTUzaEh3RC8vMWJDTmdNQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Value"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["p-value"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Decision"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"7.04468534","2":"0.13354557","3":"Assumptions acceptable.","_rn_":"Global Stat"},{"1":"3.60382580","2":"0.05764676","3":"Assumptions acceptable.","_rn_":"Skewness"},{"1":"0.86268096","2":"0.35298953","3":"Assumptions acceptable.","_rn_":"Kurtosis"},{"1":"2.52748763","2":"0.11187822","3":"Assumptions acceptable.","_rn_":"Link Function"},{"1":"0.05069094","2":"0.82186531","3":"Assumptions acceptable.","_rn_":"Heteroscedasticity"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>p &lt; tingkat signifikansi : <strong>Tidak terdapat masalah
-normalitas</strong></p>
-</div>
-<div id="uji-heteroskedastisitas" class="section level2">
-<h2>3.2 Uji Heteroskedastisitas</h2>
-<ul>
-<li><p>Ragam eror yang tidak konstan</p></li>
-<li><p>Apakah sisaan mempunyai hubungan yang berpola dengan variabel
-independen</p></li>
-<li><p>Uji Breusch Pagan</p></li>
-</ul>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVibU4yVkdWemRDaHlaV2R5WlhOcE1TbGNibHh1WUdCZ0luMD0gLS0+XG5cbmBgYHJcbm5jdlRlc3QocmVncmVzaTEpXG5cbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmN2VGVzdChyZWdyZXNpMSlcblxuYGBgIn0= -->
-<pre class="r"><code>ncvTest(regresi1)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiTm9uLWNvbnN0YW50IFZhcmlhbmNlIFNjb3JlIFRlc3QgXG5WYXJpYW5jZSBmb3JtdWxhOiB+IGZpdHRlZC52YWx1ZXMgXG5DaGlzcXVhcmUgPSAwLjQ5MDUwMzQsIERmID0gMSwgcCA9IDAuNDgzN1xuIn0= -->
-<pre><code>Non-constant Variance Score Test 
-Variance formula: ~ fitted.values 
-Chisquare = 0.4905034, Df = 1, p = 0.4837</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Pada model menunjukkan bahwa p &gt; tingkat signifikansi :
-<strong>Tidak terdapat masalah heteroskedastisitas</strong></p>
-</div>
-<div id="uji-autokorelasi" class="section level2">
-<h2>3.3 Uji Autokorelasi</h2>
-<ul>
-<li><p>Uji first order spatial correlation</p></li>
-<li><p>mengukur hubungan linier antara residual di dalam model
-regresi</p>
-<p><span class="math inline">\(u_t = r_u +e_t\)</span></p></li>
-</ul>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVJeUJWYW1rZ1FYVjBiMnR2Y21Wc1lYTnBYRzVzYVdKeVlYSjVLR3h0ZEdWemRDbGNibVIzZEdWemRDaHlaV2R5WlhOcE1TbGNibUJnWUNKOSAtLT5cblxuYGBgclxuIyBVamkgQXV0b2tvcmVsYXNpXG5saWJyYXJ5KGxtdGVzdClcbmR3dGVzdChyZWdyZXNpMSlcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBVamkgQXV0b2tvcmVsYXNpXG5saWJyYXJ5KGxtdGVzdClcbmR3dGVzdChyZWdyZXNpMSlcbmBgYCJ9 -->
-<pre class="r"><code># Uji Autokorelasi
-library(lmtest)
-dwtest(regresi1)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdER1cmJpbi1XYXRzb24gdGVzdFxuXG5kYXRhOiAgcmVncmVzaTFcbkRXID0gMC41ODcyOSwgcC12YWx1ZSA9IDkuMzk5ZS0xM1xuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBhdXRvY29ycmVsYXRpb24gaXMgZ3JlYXRlciB0aGFuIDBcbiJ9 -->
-<pre><code>
-    Durbin-Watson test
-
-data:  regresi1
-DW = 0.58729, p-value = 9.399e-13
-alternative hypothesis: true autocorrelation is greater than 0</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>DW = 2 : Tidak terdapat autokorelasi</p>
-<p>DW &lt; 2 : Terdapat autokorelasi positif</p>
-<p>DW &gt; 2 &amp; DW &lt; 4 : Terdapat korelasi negatif</p>
-<p>“Hasil menunjukkan bahwa pada model <strong>terdapat masalah
-autokorelasi</strong>”</p>
-</div>
-<div id="uji-multikolinearitas" class="section level2">
-<h2>3.4 Uji Multikolinearitas</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVkbWxtS0hKbFozSmxjMmt4S1Z4dVhHNWdZR0FpZlE9PSAtLT5cblxuYGBgclxudmlmKHJlZ3Jlc2kxKVxuXG5gYGBcblxuPCEtLSBybmItc291cmNlLWVuZCAtLT5cbiJ9 -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlmKHJlZ3Jlc2kxKVxuXG5gYGAifQ== -->
-<pre class="r"><code>vif(regresi1)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICBMblBEQiAgICBJbmZsYXNpIENyZWRpdFJhdGUgICAgICBMbkpJSSAgICAgICBERlRWIFxuICA0LjAxMTUzMyAgIDEuNDEyMzk4ICAgNS4zNjg5ODkgICAxLjgyODU5MiAgIDguNDA0NDQzIFxuIn0= -->
-<pre><code>     LnPDB    Inflasi CreditRate      LnJII       DFTV 
-  4.011533   1.412398   5.368989   1.828592   8.404443 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Dengan menggunakan rule of thumb nilai multikolinearitas 10, maka
-hasil menunjukkan bahwa tidak ada masalah multikolinearitas.</p>
-</div>
-<div id="estimasi-robust-standard-error" class="section level2">
-<h2>Estimasi Robust Standard Error</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVZMjlsWm5SbGMzUW9jbVZuY21WemFURXNJSFpqYjNZZ1BTQjJZMjkyU0VGREtWeHVYRzVnWUdBaWZRPT0gLS0+XG5cbmBgYHJcbmNvZWZ0ZXN0KHJlZ3Jlc2kxLCB2Y292ID0gdmNvdkhBQylcblxuYGBgXG5cbjwhLS0gcm5iLXNvdXJjZS1lbmQgLS0+XG4ifQ== -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29lZnRlc3QocmVncmVzaTEsIHZjb3YgPSB2Y292SEFDKVxuXG5gYGAifQ== -->
-<pre class="r"><code>coeftest(regresi1, vcov = vcovHAC)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG50IHRlc3Qgb2YgY29lZmZpY2llbnRzOlxuXG4gICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgIHQgdmFsdWUgIFByKD58dHwpICAgIFxuKEludGVyY2VwdCkgLTIxLjc5ODI2MiAgIDEuNTAwNzQxIC0xNC41MjUwIDwgMi4yZS0xNiAqKipcbkxuUERCICAgICAgICAgMi4yOTc0NDQgICAwLjEzNDQxOSAgMTcuMDkxNyA8IDIuMmUtMTYgKioqXG5JbmZsYXNpICAgICAgLTAuMDI0MDcwICAgMC4wMjAyMzggIC0xLjE4OTQgIDAuMjM5NTA0ICAgIFxuQ3JlZGl0UmF0ZSAgICAwLjA0Mzk3MCAgIDAuMDE2Mjk2ICAgMi42OTgxICAwLjAwOTI4NiAqKiBcbkxuSklJICAgICAgICAgMC4xNjE1MTUgICAwLjExNzk4NiAgIDEuMzY4OSAgMC4xNzY2ODYgICAgXG5ERlRWICAgICAgICAgIDAuMTgzNTg2ICAgMC4wNDExNjcgICA0LjQ1OTUgNC4xOTdlLTA1ICoqKlxuLS0tXG5TaWduaWYuIGNvZGVzOiAgMCDigJgqKirigJkgMC4wMDEg4oCYKirigJkgMC4wMSDigJgq4oCZIDAuMDUg4oCYLuKAmSAwLjEg4oCYIOKAmSAxXG4ifQ== -->
-<pre><code>
-t test of coefficients:
-
-              Estimate Std. Error  t value  Pr(&gt;|t|)    
-(Intercept) -21.798262   1.500741 -14.5250 &lt; 2.2e-16 ***
-LnPDB         2.297444   0.134419  17.0917 &lt; 2.2e-16 ***
-Inflasi      -0.024070   0.020238  -1.1894  0.239504    
-CreditRate    0.043970   0.016296   2.6981  0.009286 ** 
-LnJII         0.161515   0.117986   1.3689  0.176686    
-DFTV          0.183586   0.041167   4.4595 4.197e-05 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 </div>
-</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBcGxpa2FzaSByZWdyZXNpIHBhZGEgUlN0dWRpbw0KDQojIDEuIEJ1a2EgRmlsZQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHhsKQ0KDQojIEluaXNpYWxpc2FzaSBkYXRhIHlhbmcgYWthbiBkaWd1bmFrYW4NCmRhdGFfa3ByIDwtIHJlYWRfZXhjZWwoIkM6XFxVc2Vyc1xcaGlzYmlcXE9uZURyaXZlXFxEb2N1bWVudHNcXEdpdEh1YlxccnN0dWRpby10dXRvcmlhbFxcZGF0YS1pcGJcXEJhYiAyXFxkYXRhMS54bHN4IikNCg0KIyBNZW5nZ2FudGkgbmFtYSB2YXJpYWJlbA0KbmFtZXMoZGF0YV9rcHIpWzJdIDwtICJPdXRzdGFuZGluZ0tQUiINCm5hbWVzKGRhdGFfa3ByKVs3XSA8LSAiSW5mbGFzaSINCm5hbWVzKGRhdGFfa3ByKVs4XSA8LSAiQ3JlZGl0UmF0ZSINCmBgYA0KDQojIDIuIEVzdGltYXNpIFJlZ3Jlc2kNCg0KYGBge3J9DQojIEVzdGltYXNpIHJlZ3Jlc2kgT0xTDQpyZWdyZXNpMSA9IGxtKExuS1BSIH4gTG5QREIgKyBJbmZsYXNpICsgQ3JlZGl0UmF0ZSArIExuSklJICsgREZUViwgZGF0YSA9IGRhdGFfa3ByKQ0Kc3VtbWFyeShyZWdyZXNpMSkNCmBgYA0KDQojIDMgVWppIEFzdW1zaSBLbGFzaWsNCg0KVWppIGFzdW1zaSBrbGFzaWsgZGFsYW0gbWVuZ2d1YW5ha2FuIFIgU3R1ZGlvIGJpYXNhIG1lbmdndW5ha2FuIGxpYnJhcnkgZ3ZsbWFcDQoNCiMjIDMuMSBVamkgTm9ybWFsaXRhcw0KDQotICAgQmlhc2EgZGlrZW5hbCB1amkgSmFycXVlLUJlcmFzIChKQikNCg0KYGBge3J9DQojIFVqaSBOb3JtYWxpdGFzLCBsaW5lYXIsIGhldGVyb3NrZWRhc3Rpc2l0YXMNCiMgaW5zdGFsbC5wYWNrYWdlcygiZ3ZsbWEiKQ0KbGlicmFyeShndmxtYSkNCmd2bG1hKHJlZ3Jlc2kxKQ0KYGBgDQoNCnAgXDwgdGluZ2thdCBzaWduaWZpa2Fuc2kgOiAqKlRpZGFrIHRlcmRhcGF0IG1hc2FsYWggbm9ybWFsaXRhcyoqDQoNCiMjIDMuMiBVamkgSGV0ZXJvc2tlZGFzdGlzaXRhcw0KDQotICAgUmFnYW0gZXJvciB5YW5nIHRpZGFrIGtvbnN0YW4NCg0KLSAgIEFwYWthaCBzaXNhYW4gbWVtcHVueWFpIGh1YnVuZ2FuIHlhbmcgYmVycG9sYSBkZW5nYW4gdmFyaWFiZWwgaW5kZXBlbmRlbg0KDQotICAgVWppIEJyZXVzY2ggUGFnYW4NCg0KYGBge3J9DQojIFVqaSBIZXRlcm9za2VkYXN0aXNpdGFzDQojIGluc3RhbGwucGFja2FnZXMoImNhciIsIGRlcGVuZGVuY2llcz1UUlVFKQ0KbGlicmFyeShjYXIpDQpuY3ZUZXN0KHJlZ3Jlc2kxKQ0KYGBgDQoNClBhZGEgbW9kZWwgbWVudW5qdWtrYW4gYmFod2EgcCBcPiB0aW5na2F0IHNpZ25pZmlrYW5zaSA6ICoqVGlkYWsgdGVyZGFwYXQgbWFzYWxhaCBoZXRlcm9za2VkYXN0aXNpdGFzKioNCg0KIyMgMy4zIFVqaSBBdXRva29yZWxhc2kNCg0KLSAgIFVqaSBmaXJzdCBvcmRlciBzcGF0aWFsIGNvcnJlbGF0aW9uDQoNCi0gICBtZW5ndWt1ciBodWJ1bmdhbiBsaW5pZXIgYW50YXJhIHJlc2lkdWFsIGRpIGRhbGFtIG1vZGVsIHJlZ3Jlc2kNCg0KICAgICR1X3QgPSByX3UgK2VfdCQNCg0KYGBge3J9DQojIFVqaSBBdXRva29yZWxhc2kNCmxpYnJhcnkobG10ZXN0KQ0KZHd0ZXN0KHJlZ3Jlc2kxKQ0KYGBgDQoNCkRXID0gMiA6IFRpZGFrIHRlcmRhcGF0IGF1dG9rb3JlbGFzaQ0KDQpEVyBcPCAyIDogVGVyZGFwYXQgYXV0b2tvcmVsYXNpIHBvc2l0aWYNCg0KRFcgXD4gMiAmIERXIFw8IDQgOiBUZXJkYXBhdCBrb3JlbGFzaSBuZWdhdGlmDQoNCiJIYXNpbCBtZW51bmp1a2thbiBiYWh3YSBwYWRhIG1vZGVsICoqdGVyZGFwYXQgbWFzYWxhaCBhdXRva29yZWxhc2kqKiINCg0KIyMgMy40IFVqaSBNdWx0aWtvbGluZWFyaXRhcw0KDQpgYGB7cn0NCiMgVWppIE11bHRpa29saW5lYXJpdGFzDQpsaWJyYXJ5KGNhcikNCnZpZihyZWdyZXNpMSkNCmBgYA0KDQpEZW5nYW4gbWVuZ2d1bmFrYW4gcnVsZSBvZiB0aHVtYiBuaWxhaSBtdWx0aWtvbGluZWFyaXRhcyAxMCwgbWFrYSBoYXNpbCBtZW51bmp1a2thbiBiYWh3YSB0aWRhayBhZGEgbWFzYWxhaCBtdWx0aWtvbGluZWFyaXRhcy4NCg0KIyMgRXN0aW1hc2kgUm9idXN0IFN0YW5kYXJkIEVycm9yDQoNCmBgYHtyfQ0KIyBNZW5nYXRhc2kgbWFzYWxhaCBoZXRlcm9za2VkYXN0aXNpdGFzIGRhbiBhdXRva29yZWxhc2kNCmxpYnJhcnkoc2FuZHdpY2gpDQpjb2VmdGVzdChyZWdyZXNpMSwgdmNvdiA9IHZjb3ZIQUMpDQpgYGANCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBcGxpa2FzaSByZWdyZXNpIHBhZGEgUlN0dWRpbw0KDQojIDEuIEJ1a2EgRmlsZQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHhsKQ0KDQojIEluaXNpYWxpc2FzaSBkYXRhIHlhbmcgYWthbiBkaWd1bmFrYW4NCmRhdGFfYmVyYXMgPC0gcmVhZF9leGNlbCgiQzpcXFVzZXJzXFxoaXNiaVxcT25lRHJpdmVcXERvY3VtZW50c1xcR2l0SHViXFxyc3R1ZGlvLXR1dG9yaWFsXFxkYXRhLWlwYlxcQmFiIDNcXEFSSU1BLnhsc3giKQ0KZGF0YV9iZXJhcyA9IGRhdGFfYmVyYXNbLGMoLTEpXQ0KZGF0YV9iZXJhcyA9IHRzKGRhdGFfYmVyYXMsIHN0YXJ0PWMoMjAxMiwxKSwgZnJlcXVlbmN5ID0gMTIpDQpkYXRhX2JlcmFzDQpgYGANCg0KMiBWaXN1YWxpc2FzaQ0KDQpgYGB7cn0NCnBhcihtZnJvdz1jKDEsMSkpDQpwbG90KGRhdGFfYmVyYXMsIG1haW49J0hhcmdhIEJlcmFzIGRpIFBlcmRhZ2FuZ2FuIEJlc2FyJykNCmBgYA0K</div>
 
 
 
@@ -2014,7 +1829,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("2 Regresi OLS dengan Pengujian Gauss Markov.Rmd");
+  window.initializeSourceEmbed("3 ARIMA , ARCG, GARCH.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

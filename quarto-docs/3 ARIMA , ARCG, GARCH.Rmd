@@ -8,10 +8,10 @@ library(readxl)
 data_beras <- read_excel("C:/Users/hisbi/OneDrive/Documents/GitHub/rstudio-tutorial/data-ipb/Bab 3/ARIMA.xlsx")
 
 # Drop the first column (assuming it contains non-numeric data like dates)
-data_beras <- data_beras[,-1]
+data_beras <- data_beras[,c(-1)]
 
 # Convert the data frame to a time series (Ensure it's numeric)
-data_beras <- ts(as.numeric(unlist(data_beras)), start = c(2012,1), frequency = 12)
+data_beras <- ts(data_beras, start = c(2012,1), frequency = 12)
 
 # Check the structure of the time series
 print(data_beras)
@@ -45,6 +45,14 @@ library(aTSA)
 adf.test(data_beras)
 ```
 
+p \> 0.05 : Terdapat akar-akar unit (**tidak stasioner**)
+
+```{r}
+adf.test(diff(data_beras))
+```
+
+p \< 0.05 : Tidak terdapat masalah stasioner pada bentuk first different.
+
 ### Perilaku ACF dan PACF (Fungsi autokorelasi parsial)
 
 #### ACF
@@ -53,17 +61,73 @@ adf.test(data_beras)
 par(mfrow = c(2,1))
 # Plot ACF
 acf(data_beras, lag.max = 48, main = "Autocorrelation Function (ACF)")
-```
-
-#### PACF
-
-```{r}
-# Plot PACF
 pacf(data_beras, lag.max = 48, main = "Partial Autocorrelation Function (PACF)")
 ```
 
 ## Estimasi
 
+estimasi seluruh model tentatif untuk menentukan model terbaik.
+
+Menggunakan fungsi auto arima yang ada pada library forecast
+
+```{r}
+# install.packages("forecast")
+library(forecast)
+auto.arima(data_beras, trace=TRUE)
+```
+
+model terbaik yang dapat dilakukan adalah :
+
+```         
+ARIMA(0,1,3)(2,1,0)[12]
+```
+
+Karena memiliki aic terkecil
+
+Model tersebut komponen non seasonal dan seasonal -\> melakukan evaluasi pada model
+
 ## Evaluasi Model
 
+```{r}
+# install.packages("lmtest")
+library(lmtest)
+model_manual = arima(data_beras, order=c(0,1,3), seasonal=list(order=c(2,1,0), period=12))
+
+coeftest(model_manual)
+```
+
+-\> Evaluasi Heteroskedastisitas
+
+```{r}
+arch.test(model_manual)
+```
+
+p \> 0.05 : **Tidak terdapat heteroskedastisitas** (jika terdapat heteroskedastisitas maka menggunakan ARCH/GARCH)
+
+-\> Uji Keacakan Residual
+
+```{r}
+Box.test(model_manual$residuals, lag=1, type = "Ljung-Box", fitdf = 0)
+```
+
+p \> 0.1
+
+Tidak cukup bukti menyatakan adanya autokorelasi.
+
 ## Peramalan
+
+```{r}
+forecast(model_manual, h=12)
+```
+
+```{r}
+library(forecast)
+
+# Fit an ARIMA model
+model1 <- auto.arima(data_beras)
+
+# Forecast 12 steps ahead
+forecasted_values <- forecast::forecast(data_beras, h = 12)
+plot(forecasted_values)
+
+```
